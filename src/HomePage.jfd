@@ -1,0 +1,50 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :::p, comp label1:::p:492:p, space :::p, comp label7:::p:89:p, space s:::p, comp label8:::p:127:p}, seq l {space :p:168:p, comp label3:::p:478:p}, seq l {space :p:78:p, comp label2:::p:633:p}}, space ::50:x}}"
+			"$verticalGroup": "par l {seq l {par t {par b {comp label7::b:p:42:p, comp label8::b:p:42:p}, comp label1:::p::p}, space :::p, comp label3:::p:86:p, space :::p, comp label2:::p:154:p, space :0:43:x}}"
+		} ) {
+			name: "this"
+			"title": "Taxify"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Sem4\\Java\\CAT3\\taxifylogo.png" )
+			"background": new com.jformdesigner.model.SwingColor( "EditorPane.selectionBackground" )
+			"defaultCloseOperation": 3
+			"$sizePolicy": 1
+			addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "thisMouseClicked", true ) )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "thisWindowOpened", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Driver"
+				"font": new java.awt.Font( "Segoe UI", 0, 26 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label7MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Passenger"
+				"font": new java.awt.Font( "Segoe UI", 0, 26 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label8MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "E:\\Sem4\\Java\\CAT3\\taxifyfin1.jpg" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Welcome to Taxify!"
+				"font": new java.awt.Font( "Segoe UI", 0, 48 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Book a City Taxi to your destination in town"
+				"font": new java.awt.Font( "Segoe UI", 0, 26 )
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 220, 80 )
+			"size": new java.awt.Dimension( 790, 375 )
+		} )
+	}
+}

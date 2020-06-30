@@ -1,0 +1,73 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:129:p, comp label1:::p:158:p}, seq l {space :p:26:p, par l {comp label2:::p:148:p, comp label4::l:p:148:p, comp label6::l:p:148:p, comp label14:::p:148:p, comp label8::l:p:148:p}, space :p:42:p, par t {par l:::p {seq {comp label15:::p:84:p, space :::p, comp label13:::p:46:p}, comp label7::::191:x, comp label9::l::191:x}, comp label5:::p:191:p, comp label3:::p:191:p}}}, space ::61:x}}"
+			"$verticalGroup": "par l {seq l {space :p:14:p, par t {seq {comp label1:::p:52:p, space :p:28:p, comp label2:::p:29:p}, comp label5:::p:31:p}, space s:::p, par t {comp label4:::p:32:p, comp label3:::p:29:p}, space s:::p, par t {comp label6:::p:36:p, comp label7:::p:36:p}, par t:::p {seq {space :p:27:p, comp label9:::p:31:p, space :p:12:p, comp label13:::p:43:p}, seq {space s:::p, comp label8:::p:31:p, space :::x, par t {comp label15:::p:46:p, comp label14:::p:43:p}}}, space ::58:x}}"
+		} ) {
+			name: "this"
+			"title": "Your Profile"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Sem4\\Java\\CAT3\\taxifylogo.png" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "My Profile"
+				"font": new java.awt.Font( "Segoe UI", 0, 28 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Name :"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Mobile Number :"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Email-ID :"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Age :"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": "Rating :"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "E:\\Sem4\\Java\\CAT3\\ratingstar.jpg" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"font": #Font0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 470, 430 )
+		} )
+	}
+}

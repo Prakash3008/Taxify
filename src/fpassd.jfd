@@ -1,0 +1,43 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:118:p, comp button1:::p:147:p}, seq l {space :p:37:p, par l:::p {comp label1:::::x, comp label2:::p:160:p}, space :::p, par l {comp textField1:::p:157:p, comp label3:::::x}}}, space ::40:x}}"
+			"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp label1::b:p:33:p, comp textField1::b:::x}, space u:::p, par l:::p {comp label2::::32:x, comp label3::::32:x}, space s:::p, comp button1:::p::p, space ::23:x}}"
+		} ) {
+			name: "this"
+			"title": "Forgot Password"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Sem4\\Java\\CAT3\\taxifylogo.png" )
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Enter the Mobile Number :"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Password :"
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Show Password"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"font": #Font0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 425, 195 )
+		} )
+	}
+}

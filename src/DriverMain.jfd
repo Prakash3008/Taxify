@@ -1,0 +1,117 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:17:p, par l {comp label3::::177:x, comp label5:::::x, comp label6::l::177:x}, space u:::p, par l {seq l {comp label4:::p:163:p, space ::169:x}, seq l {space :11:11:p, par l:::p {comp textField1::::103:x, comp spinner1::::103:x}, space ::60:x, comp button2:::p:111:p, space :p:47:p}}}, seq {par l {seq l {space :p:76:p, comp button1:::p:133:p, space u:::p, comp label2:::p:251:p}, seq l {space :p:33:p, comp label1:::p:197:p, space u:::p, comp comboBox1:::p:149:p}}, space :p:49:p}}"
+			"$verticalGroup": "par l {seq l {space :p:115:p, par b {comp label1::b:p:26:p, comp comboBox1::b:p::p}, space s:::p, par l:::p {comp label2::::42:x, comp button1::::42:x}, space :p:35:p, par b {comp label3::b:p:47:p, comp label4::b:p:47:p}, par l {seq {space :p:56:p, par b {comp label5::b:p:38:p, comp textField1::b:p::p}, space :::x, par b {comp label6::b:p:30:p, comp spinner1::b:p::p}, space :p:15:p}, seq t {space ::59:x, comp button2:::p:56:p, space :p:32:p}}}}"
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"title": "Driver "
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Sem4\\Java\\CAT3\\taxifylogo.png" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Enter Current Location :"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Gandhipuram"
+					addElement( "Gandhipuram" )
+					addElement( "Isha" )
+					addElement( "RS Puram" )
+					addElement( "Ukkadam" )
+					addElement( "Hopes College" )
+					addElement( "Periyanaiyekapalayam" )
+					addElement( "Singanallur" )
+					addElement( "Cheran Ma Nagar" )
+					addElement( "Vilankurichi" )
+					addElement( "PSG College" )
+					addElement( "CIT College" )
+					addElement( "Perur" )
+					addElement( "Sitra Airport" )
+					addElement( "Cross Cut Road" )
+					addElement( "100 Feet Road" )
+					addElement( "Gandhi Ma Nagar" )
+					addElement( "Ganapathy" )
+					addElement( "Sulur" )
+					addElement( "Kovaiputhur" )
+					addElement( "Sai Baba Colony" )
+					addElement( "Ramanathapuram" )
+				}
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Get Rides"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Passenger Details :"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "End Trip"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Amount (in Rs.):"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "textField1FocusLost", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "spinner1"
+				"model": new javax.swing.SpinnerNumberModel( 1, 1, 5, 1 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Passenger Rating (0-5) :"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "Driver Profile"
+					"font": new java.awt.Font( "Segoe UI", 0, 16 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "View Profile"
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "Your Rides"
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "Logout"
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 0 )
+			"size": new java.awt.Dimension( 540, 495 )
+		} )
+	}
+}
