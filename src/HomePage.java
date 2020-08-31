@@ -29,12 +29,12 @@ public class HomePage extends JFrame {
 
     private void label7MouseClicked(MouseEvent e) {
         //this.setVisible(false);
-        new LoginDriver().setVisible(true);
+        new LoginDriver().setVisible(false);
     }
 
     private void label8MouseClicked(MouseEvent e) {
         //this.setVisible(false);
-        new PassengerLogin().setVisible(true);
+        new PassengerLogin().setVisible(false);
     }
 
     private void initComponents() {
